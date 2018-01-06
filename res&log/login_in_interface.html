@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login up interface</title>
+	<link rel="stylesheet" type="text/css" href="login_in.css">
+</head>
+<!-- <style type="text/css">
+	.bg{
+		background-color: #6c6d69;
+		height: 1200px;
+		width:1200px;
+		border:solid 1px;
+		font-size: 15px;
+	}
+	.left{
+		width: 300px;
+		height: 50px;
+		display: block;
+		position:relative;
+		left:20px;
+		clear: left;
+	}
+	.right{
+		width: 300px;
+		height: 50px;
+		display: block;
+		float: left;
+	}
+	input:focus{
+		background-color:#272822;
+		font-style: white; 
+		outline:1px solid red;
+	}
+	.notice{
+		display: none;
+	}
+</style> -->
+<body>
+<div class="bg">
+	<div class="con">
+		<form action="" method="post">
+			<fieldset>
+				<legend>account information</legend>
+				<div class="left">
+					<label for="account">account name: </label>
+				</div>
+				<div class="right">
+					<input type="text" name="account_name" id="account">
+				</div>
+				<div class="notice"> only 8 bit strings including number or english</div>
+				<div class="left">
+					<label for="password">password:</label>
+				</div>
+				<div class="right">
+					<input type="password" name="account_password" id="password">
+				</div>
+				<div class="left">
+					<label for="confirm_password">confirm password:</label>
+				</div>
+				<div class="right">
+					<input type="password" name="account_password_confirm" id="con_password">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>user information</legend>
+				<div class="left">
+					<labbel for="name">name:</labbel>
+				</div>
+				<div class="right">
+					<input type="text" name="user_name" id="name">
+				</div>
+				<div class="left">
+					<label for="sex">sex:</label>
+				</div>
+				<div class="right">
+					<label>boy<input type="radio" name="sex" value="boy"></label>
+					<label>girl<input type="radio" name="sex" value="girl"></label>
+				</div>
+				<div class="left">
+					<label for="age">age:</label>
+				</div>
+				<dic class="right">
+					<input type="number" name="age" id="age" min="0" max="150">
+				</dic>
+				<div class="left">
+					<label for="birthday">birthday:</label>
+				</div>
+				<div class="right">
+					<input type="date" name="birthday" id="birthday">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>tel information</legend>
+				<div class="left">
+					<label for="telephone">telephone number:</label>
+				</div>
+				<div class="right">
+					<input type="tel" name="telenumber" id="tel">
+				</div>
+				<div class="left">
+					<label for="email">e-mail:</label>
+				</div>
+				<div class="right">
+					<input type="email" name="email" id="email">
+				</div>
+			</fieldset>
+			<input type="submit" name="submit" value="submit">
+		</form>
+	</div>
+</div>
+<script>
+	window.onload=function(){
+		var account = document.getElementById("account");
+		var notice = document.getElementsByClassName("notice");
+		account.onfocus=function(){
+			notice[0].style.display="block";
+		}
+		account.onblur=function(){
+			notice[0].style.display="none";
+		}
+	}
+</script>
+</body>
+</html>

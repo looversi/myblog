@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome</title>
+	<!-- <link rel="stylesheet" type="text/css" href="login_in.css"> -->
+	<style type="text/css">
+		body,input,textarea,select,option{
+			padding:0; margin: 0;
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+		.box{
+			width: 500px;
+			height: 200px;
+			background:url(bg.png);
+			margin: 0 auto;
+			background-size: content;
+		}
+		.left{
+			width: 180px;
+			height: 50px;
+			float: left;
+			padding-right: 20px;
+			line-height: 50px;
+			text-align: right;
+			color: #fff;
+			clear: left;
+		}
+		.right{
+			width: 300px;
+			width: 50px;
+			float: left;
+			line-height: 50px;
+
+		}
+		.button{
+			width: 500px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+		}
+		input{
+			width: 180px;
+			height: 30px;
+			border: 1px solid #888;
+			box-shadow: 0 2px 1px #aaa inset;
+			padding-left: 20px;
+			vertical-align: middle;
+			border-radius: 15px;
+		}
+		input[name=login],input[name=sign]{
+			width: 100px;
+			height: 30px;
+			background:#fff;
+			padding: 0;
+			font-weight: bold;
+			cursor: pointer;
+/*			margin: 0 auto;*/
+			text-align: center;
+
+		}
+		input[name=login]:active,input[name=sign]:active{
+			box-shadow: none;
+		}
+		
+	</style>
+</head>
+<body>
+<form action="javascript:void(0)" id="my_form"></form>
+<div class="box">
+	<div class="left">
+		<label for="user_name">account:</label>
+	</div>
+	<div class="right">
+		<input type="text" name="user_name" id="account" placeholder="please enter account" autofocus="true">
+	</div>
+	<div class="left">
+		<label for="password">password:</label>
+	</div>
+	<div class="right">
+		<input type="password" name="password" id="password">
+	</div>
+	<div style="clear:both"></div>
+	<input type="button" name="login" value="login" for="my_form">
+	<input type="button" name="sign" value="register" for="my_form">
+</div>
+</body>
+</html>
