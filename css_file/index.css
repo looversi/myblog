@@ -1,0 +1,15 @@
+body,textarea,select,option,input{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+.bg{
+	width: 800px;
+	height: auto;
+	padding: 5px;
+	background-color: #EBEDEF;
+	margin: 0 auto;
+	
+}
